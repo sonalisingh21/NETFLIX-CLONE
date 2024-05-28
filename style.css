@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+
+    /* insert an image in the background; */
+
+    background-image: url(assets/image/bg\ \(1\).jpg);
+
+
+    /* setting properties for background image;
+    => position is center center so that it is not messed up while resizing
+    
+     => background is set to no repeat so that img do not repeats itself;*/
+
+
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* setting the background image such that whatever the width is maximum it will be adjusted while resizing
+     and we will not see gray- space; 
+     it also gives ZOOM EFFECT*/
+
+    background-size: max(1200px, 100vw);
+
+    /* img will not appear untill you give it height / width for main; */
+    height: 644px;
+
+
+    /* SET POSITION  */
+    position: relative;
+}
+
+.main .box {
+    /* give the box same hieght as that of the the box so image is covered and edited as per desire; */
+
+    height: 644px;
+    width: 100%;
+
+    /* color properties of back-ground */
+    background-color: black;
+    opacity: 0.69;
+
+    /* set position for this - so  NAV BAR IS SET INSIDE THE BOX PROPERLY */
+    position: absolute;
+    top: 0;
+}
+
+nav {
+
+    /* LET THE DISPLAY BE FLEX AND STYLE THE NAV BAR */
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    /* setting max width and margin auto will bering the nav bar in the center; */
+    max-width: 60vw;
+    margin: auto;
+
+
+    /* SET HIGHT FOR THE NAV BAR */
+    height: 100px;
+
+}
+
+
+
+nav img {
+
+    /* STYLING THE NETFLIX ICON IMG INSIDE NAV BAR */
+    width: 130px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    /* STYLING THE english and sign in buttons INSIDE NAV BAR */
+    position: relative;
+    z-index: 10;
+}
+
+
+.hero {
+    /* CREATING HERO SECTION THAT WILL CONTAIN 
+TEXTS THAT IS PRESENT INSIDE THE BOX */
+
+    /* giving font-style to the content */
+    font-family: "Martel Sans", sans-serif;
+
+    /* setting the hero box content as 
+     flexbox */
+    height: calc(100% - 100px);
+
+    /* styling this part also using flex-box*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* text color is white */
+    color: white;
+
+    /* popping out the text from the background so it appears brighter */
+    position: relative;
+    z-index: 10;
+
+
+    /* GIVING SOME PADDING TO CONTENT
+    0 from top  and bottom and 
+    30px from the sides */
+    padding: 0px 30px;
+
+    /*giving some gap from all the sides so it is not closely stacked */
+    gap: 23px;
+
+}
+
+.hero> :nth-child(1) {
+
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.hero :nth-child(2) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero :nth-child(3) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+
+    /* position is relative and z index should be higher so the horizontal line should pop out */
+    position: relative;
+    z-index: 20;
+
+}
+
+.btn {
+
+    /* styling enlish and sign in buttons */
+    padding: 3px 8px;
+    font-weight: 500;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+/* STYPING HERO BUTTONS; */
+.hero-buttons {
+
+    /* stling get started and hero buttons with help of a flex box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+
+.red-btn {
+
+    /* styling the Get Started button */
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 3px 24px;
+    border-radius: 4px;
+    font-weight: 400;
+
+}
+
+.red-btn-sm {
+    /* styling the Sign in (small- red button) */
+    background-color: red;
+    color: white;
+    font-weight: 400;
+}
+
+.main input {
+    /* styling the EMAIL address box */
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+
+}
+
+
+
+.first {
+    /* styling the 1st part of the section  */
+
+    /* display is flex so that content and video and img all are aligned as per desire */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+
+    
+}
+/* MEDIA QUERY FOR RESPONSIVENESS */
+@media screen and (max-width:1300px){
+ .first{
+    flex-wrap: wrap;
+ }
+    
+} 
+
+
+.secImg {
+    position: relative;
+    z-index: 10;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+@media screen and (max-width:1300px){
+    .secImg img{
+        width: 305px; 
+
+    }
+    .secImg video{
+        width: 305px; 
+
+    }
+       
+   }
+
+
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+/* THIS SECTION HAS TO BE IN FLEX BECAUSE WE ARE PUTTING THE CONTENT INSIDE SPAN TAGS INSTEAD OF DIVS; */
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :first-child {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+section.first > div :nth-child(2) {
+
+    font-size: 20px;
+}
+
+.faq{
+    background-color:black;
+    color: white;
+    padding: 34px;
+
+}
+.faq > h2{
+   
+    text-align: center;
+   font-size: 48px;
+
+}
+.faqbox:hover {
+    background-color: rgb(114, 111, 111);
+
+    
+
+}
+/* we also need thr "+" sin to be in white color ; so we can simply use filter in svg present insidie svg box*/
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox{
+    display: flex;
+    background-color:#353535;
+    /* opacity: 0.3; */
+    padding: 14px;
+    max-width: 60vw;
+    margin: 9px auto;
+    justify-content:space-between;
+    font-size: 24px;
+    /* making a transition so that change is visible on hovering over the faq box  */
+    transition: all 1s ease-out;
+
+}
+
+footer{
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+footer .questions{
+ 
+    color: white;
+    padding: 34px 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  
+
+}
+/* styling the anchor tag items inside footer section */
+.footer a {
+    color: white;
+    opacity: 0.36;
+    font-size: 14px;
+
+  
+}
+/* NOW LETS WORK ON RESPONSIVENESS OF THE WEBSITE USING  MEDIA QUERIES */
+@media screen and (max-width:1300px){
+    .footer{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+       
+   }

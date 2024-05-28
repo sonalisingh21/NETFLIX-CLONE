@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- CREATE A NAV-BAR -->
+        <nav>
+            <!-- inserting netflix logo -->
+            <span><img width="53px" src="assets/image/logo.svg" alt=""></span>
+
+            <!-- insert two buttons for sign in and language -->
+            <div>
+                <button class="btn">
+                    English</button>
+
+                <button class="btn  red-btn-sm"> Sign In </button>
+            </div>
+
+
+        </nav>
+        <!-- insert content inside navbar -->
+
+
+
+        <!-- insert a dummy box, and then change its opacity in order to make the bacground image look faded;dummy box is inserted so if we insert text it is visible-->
+        <div class="box">
+        </div>
+
+
+        <!-- insert content inside the box using a different div beause putting it directly inside the box will disturb its position; currently this hero text will be below the nav bar as we wanted it ; -->
+
+        <div class="hero">
+            <!-- PUTTING TEXTS IN SPAN BECAUSE STYLING WILL BE DIFFERENT FOR EACH SPAN -->
+
+            <span>Enjoy big movies, hit series and more from ₹ 149.</span>
+
+            <span> Join today. Cancel anytime.</span>
+
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+
+
+            <!-- CREATING BUTTONS FOR HERO SECTION THAT INCLUDES EMAIL ADD. AND GET STARTED OPTIONS -->
+
+            <div class="hero-buttons">
+
+                <input type="text" placeholder="Email Address">
+                <button class="btn red-btn ">Get Started &gt;</button>
+
+            </div>
+            <!-- HERO SECTION IS OVER NOW -->
+
+        </div>
+        <div class="seperation">
+            <!-- THIS IS SIMPLY Aa horizontal line that marks the seperation of main and other sections; -->
+        </div>
+
+        <!-- designing the section consisting of vids and imgs -->
+
+
+        <!-- this is the first part of the section  -->
+
+        <section class="first">
+            <div>
+                <span>Enjoy on your TV</span>
+                <span>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+            </div>
+
+            <div class="secImg">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+                <video
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                    autoplay loop muted></video>
+            </div>
+
+        </section>
+
+        <!-- after first part ends we need one more seperation line to mark the seperation of sections -->
+
+        <div class="seperation">
+            <!-- THIS IS SIMPLY a horizontal line that marks the seperation of main and other sections; -->
+        </div>
+
+        <!-- duplicating first section two times because only a few things are changing and not every thing;  -->
+
+
+        <!-- this is second section -->
+        <section class="first secondsection">
+            <!-- in this section image comes first and then the text -->
+            <div class="secImg">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                    alt="">
+            </div>
+            <div>
+                <span>Download your shows to watch offline</span>
+                <span>Save your favourites easily and always have something to watch.</span>
+            </div>
+
+        </section>
+        <div class="seperation">
+            <!-- THIS IS SIMPLY a horizontal line that marks the seperation of main and other sections; -->
+        </div>
+
+        <!-- this is third section -->
+        <section class="first  thirdsection">
+            <!-- in the second section we just replace the text from the website and the video and image links because the overall layout is same as that of the first section -->
+            <div>
+                <span>Watch everywhere</span>
+                <span>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+            </div>
+
+            <div class="secImg">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+                <video
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                    autoplay loop muted></video>
+            </div>
+
+        </section>
+        <div class="seperation">
+            <!-- THIS IS SIMPLY a horizontal line that marks the seperation of main and other sections; -->
+        </div>
+
+        <!-- this is fourth section which is same as second so we are simply going to give it the class of first and second -->
+        <section class="first second">
+
+            <div class="secImg">
+                <img src="https://occ-0-2849-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+                    alt="">
+
+            </div>
+            <div>
+                <span>Create profiles for kids</span>
+                <span>Send children on adventures with their favourite characters in a space made just for them—free
+                    with
+                    your membership.</span>
+            </div>
+        </section>
+
+        <div class="seperation">
+            <!-- THIS IS SIMPLY a horizontal line that marks the seperation of main and other sections; -->
+        </div>
+
+
+        <!-- NOW WE ARE CREATING A FAQ SECTION; -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faqbox">
+                <span>What is NetFlix</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <!-- CREATING COPIES OF FIRST FAQ QUESTIONS AND THEN REPLACING WITH ORIGINAL QUESTIONS -->
+
+            <!-- SECOND QUESTION -->
+            <div class="faqbox">
+                <span>How much does Netflix cost?
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <!-- THIRD QUESTION -->
+            <div class="faqbox">
+                <span>Where can I watch?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <!-- FOURTH QUESTION -->
+            <div class="faqbox">
+                <span>How do I cancel?
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <!-- FIFTH QUESTION -->
+            <div class="faqbox">
+                <span>What can I watch on Netflix?
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <!-- SIXTH QUESTION -->
+            <div class="faqbox">
+                <span>Is Netflix good for kids?
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+            <!-- SEVENTH QUESTION -->
+        </section>
+
+
+        <div class="seperation">
+            <!-- THIS IS SIMPLY a horizontal line that marks the seperation of main and other sections; -->
+        </div>
+
+        <!-- now we will create a footer section  -->
+        <footer>
+
+          <div class="questions">
+            Questions? Contact us.
+        </div>
+
+            <div class="footer">
+
+            <div class="footer-item"> <a href=" FAQ">FAQ</a>
+                <a href="Help Centre">Help Centre</a>
+                <a href="Account">Account</a>
+                <a href="Media Centre" Media Centre></a>
+                <a href="Investor Relations">Investor Relations</a>
+            </div>
+
+            <div class="footer-item">
+                <a href="Jobs">Jobs</a>
+                <a href="Ways to Watch">Ways to Watch</a>
+                <a href="Terms of Use">Terms of Use</a>
+                <a href="Privacy">Privacy</a>
+                <a href="Cookie Preferences">Cookie Preferences</a>
+            </div>
+
+
+            <div class="footer-item">
+                <a href="Contact Us">Contact Us</a>
+                <a href="Speed Test">Speed Test</a>
+                <a href="Legal Notices">Legal Notices</a>
+                <a href="Only on Netflix">Only on Netflix</a>
+            </div>
+
+
+            <div class="footer-item">
+                <a href="Jobs">Jobs</a>
+                <a href="Ways to Watch">Ways to Watch</a>
+                <a href="Terms of Use">Terms of Use</a>
+                <a href="Privacy">Privacy</a>
+                <a href="Cookie Preferences">Cookie Preferences</a>
+            </div>
+        </div>
+
+        </footer>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
